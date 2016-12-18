@@ -59,7 +59,7 @@ main(int argc, char* argv[]) {
     cmdlist->push_back(new CmdPrint("CmdPrint2"));
     cmdlist->push_back(new CmdSleep(1));
     cmdlist->push_back(new CmdPrint("CmdPrint3"));
-    cmdlist->push_back(new CmdSleep(1));
+    cmdlist->push_back(new CmdSleep(0));
 
     coro_t::pull_type seq(
         boost::coroutines2::fixedsize_stack(),
